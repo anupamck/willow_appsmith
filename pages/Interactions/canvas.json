@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 720,
+          "bottomRow": 760,
           "containerStyle": "none",
           "snapRows": 67,
           "parentRowSpace": 1,
@@ -1220,7 +1220,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 38,
+              "leftColumn": 48,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -1233,7 +1233,7 @@
               "isDisabled": false,
               "key": "ioelyzew8f",
               "isDeprecated": false,
-              "rightColumn": 54,
+              "rightColumn": 64,
               "isDefaultClickDisabled": true,
               "widgetId": "1ezztomed7",
               "isVisible": true,
