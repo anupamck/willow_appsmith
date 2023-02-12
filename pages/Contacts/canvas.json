@@ -157,7 +157,7 @@
                 "name": 256,
                 "customColumn2": 60,
                 "customColumn1": 105,
-                "customColumn3": 73.46875,
+                "customColumn3": 67.46875,
                 "customColumn4": 123,
                 "frequency": 97
               },
@@ -372,7 +372,7 @@
               },
               "key": "fte1n8gvby",
               "isDeprecated": false,
-              "rightColumn": 64,
+              "rightColumn": 42,
               "textSize": "0.875rem",
               "widgetId": "nxpf3w472c",
               "allowAddNewRow": false,
@@ -1100,7 +1100,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 34,
+              "leftColumn": 26,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -1113,7 +1113,7 @@
               "isDisabled": false,
               "key": "0qhzpvt3ik",
               "isDeprecated": false,
-              "rightColumn": 50,
+              "rightColumn": 42,
               "isDefaultClickDisabled": true,
               "widgetId": "ioayf734if",
               "isVisible": true,
