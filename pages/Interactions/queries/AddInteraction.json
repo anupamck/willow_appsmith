@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO interactions (person_id, title, date, notes) VALUES ('{{appsmith.URL.queryParams.rowId}}', '{{InteractionTitle.text}}', '{{InteractionDate.formattedDate}}', '{{InteractionNotes.text}}');\n",
+      "body": "INSERT INTO interactions (person_id, title, date, notes) VALUES ({{appsmith.URL.queryParams.rowId}}, '{{InteractionTitle.text.replace(\"'\", \"\\\\'\")}}', '{{InteractionDate.formattedDate}}', '{{InteractionNotes.text.replace(\"'\", \"\\\\'\")}}');\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,8 +37,8 @@
     "messages": [],
     "jsonPathKeys": [
       "InteractionDate.formattedDate",
-      "InteractionNotes.text",
-      "InteractionTitle.text",
+      "InteractionNotes.text.replace(\"'\", \"\\\\'\")",
+      "InteractionTitle.text.replace(\"'\", \"\\\\'\")",
       "appsmith.URL.queryParams.rowId"
     ],
     "userSetOnLoad": false,
