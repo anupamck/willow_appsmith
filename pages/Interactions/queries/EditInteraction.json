@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE interactions\nSET date = '{{EditInteractionDate.formattedDate}}', title = '{{EditInteractionTitleText.text.replace(\"'\", \"\\\\'\")}}', notes = '{{EditInteractionNotes.text.replace(\"'\", \"\\\\'\")}}'\nWHERE id = {{InteractionsTable.triggeredRow.id}};",
+      "body": "UPDATE interactions\nSET date = '{{EditInteractionDate.formattedDate}}', title = '{{EditInteractionTitleText.text.replaceAll(\"'\", \"\\\\'\")}}', notes = '{{EditInteractionNotes.text.replaceAll(\"'\", \"\\\\'\")}}'\nWHERE id = {{InteractionsTable.triggeredRow.id}};",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -37,8 +37,8 @@
     "messages": [],
     "jsonPathKeys": [
       "EditInteractionDate.formattedDate",
-      "EditInteractionNotes.text.replace(\"'\", \"\\\\'\")",
-      "EditInteractionTitleText.text.replace(\"'\", \"\\\\'\")",
+      "EditInteractionNotes.text.replaceAll(\"'\", \"\\\\'\")",
+      "EditInteractionTitleText.text.replaceAll(\"'\", \"\\\\'\")",
       "InteractionsTable.triggeredRow.id"
     ],
     "userSetOnLoad": false,
