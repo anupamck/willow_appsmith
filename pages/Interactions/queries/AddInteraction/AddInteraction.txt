@@ -1,0 +1,1 @@
+INSERT INTO interactions (person_id, title, date, notes) VALUES ({{appsmith.URL.queryParams.rowId}}, '{{InteractionTitle.text.replaceAll("'", "\\'")}}', '{{InteractionDate.formattedDate}}', '{{InteractionNotes.text.replaceAll("'", "\\'")}}');

@@ -1,0 +1,5 @@
+SELECT c.id, c.name, c.frequency, max(i.date) as last_interaction
+FROM contacts c
+LEFT JOIN interactions i ON i.person_id = c.id
+GROUP BY c.id, c.name, c.frequency
+HAVING (DATEDIFF(NOW(), max(i.date))) >= c.frequency

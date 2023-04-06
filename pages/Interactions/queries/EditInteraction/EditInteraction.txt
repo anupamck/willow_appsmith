@@ -1,0 +1,3 @@
+UPDATE interactions
+SET date = '{{EditInteractionDate.formattedDate}}', title = '{{EditInteractionTitleText.text.replaceAll("'", "\\'")}}', notes = '{{EditInteractionNotes.text.replaceAll("'", "\\'")}}'
+WHERE id = {{InteractionsTable.triggeredRow.id}};

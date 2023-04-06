@@ -1,0 +1,3 @@
+SELECT * from interactions
+WHERE person_id = {{Number(appsmith.URL.queryParams.rowId)}}
+ORDER BY date DESC
