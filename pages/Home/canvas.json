@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 660,
+          "bottomRow": 430,
           "containerStyle": "none",
           "snapRows": 66,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 76,
+          "version": 77,
           "minHeight": 670,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -101,6 +101,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1680186726277,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -162,7 +163,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{HomeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "sticky": ""
                 },
                 "id": {
                   "allowCellWrapping": false,
@@ -190,7 +192,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{HomeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "sticky": ""
                 },
                 "last_interaction": {
                   "allowCellWrapping": false,
@@ -220,7 +223,8 @@
                   "validation": {},
                   "cellBackground": "",
                   "inputFormat": "YYYY-MM-DD",
-                  "outputFormat": "YYYY-MM-DD"
+                  "outputFormat": "YYYY-MM-DD",
+                  "sticky": ""
                 },
                 "customColumn1": {
                   "allowCellWrapping": false,
@@ -255,7 +259,8 @@
                   "buttonLabel": "Interactions",
                   "cellBackground": "transparent",
                   "buttonVariant": "PRIMARY",
-                  "onClick": "{{navigateTo('Interactions', {\"rowId\": HomeTable.triggeredRow.id }, 'SAME_WINDOW')}}/"
+                  "onClick": "{{navigateTo('Interactions', {\"rowId\": HomeTable.triggeredRow.id }, 'SAME_WINDOW')}}/",
+                  "sticky": ""
                 },
                 "frequency": {
                   "allowCellWrapping": false,
@@ -283,10 +288,12 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{HomeTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"frequency\"]))}}",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "sticky": ""
                 }
               },
               "key": "c5uvxzeuxa",
+              "canFreezeColumn": false,
               "isDeprecated": false,
               "rightColumn": 51,
               "textSize": "0.875rem",

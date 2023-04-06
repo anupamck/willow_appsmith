@@ -1,0 +1,2 @@
+INSERT INTO contacts (name, frequency) VALUES ('{{NewContactName.text.replaceAll("'", "\\'")}}', '{{NewContactFrequency.text}}');
+
