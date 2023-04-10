@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 720,
+          "bottomRow": 680,
           "containerStyle": "none",
           "snapRows": 67,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 76,
+          "version": 77,
           "minHeight": 680,
           "parentColumnSpace": 1,
           "dynamicBindingPathList": [],
@@ -352,7 +352,7 @@
                   "widgetName": "Canvas1Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 550,
+                  "bottomRow": 540,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -559,7 +559,7 @@
                           "widgetName": "Canvas4CopyCopy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 410,
+                          "bottomRow": 420,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
@@ -921,6 +921,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "originalBottomRow": 58,
+              "columnUpdatedAt": 1680194088414,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -989,7 +990,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{InteractionsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"title\"]))}}",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "sticky": ""
                 },
                 "date": {
                   "allowCellWrapping": false,
@@ -1019,7 +1021,8 @@
                   "validation": {},
                   "cellBackground": "",
                   "inputFormat": "YYYY-MM-DD",
-                  "outputFormat": "YYYY-MM-DD"
+                  "outputFormat": "YYYY-MM-DD",
+                  "sticky": ""
                 },
                 "notes": {
                   "allowCellWrapping": true,
@@ -1047,7 +1050,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{InteractionsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"notes\"]))}}",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "sticky": ""
                 },
                 "customColumn1": {
                   "allowCellWrapping": false,
@@ -1080,7 +1084,8 @@
                   "menuButtonLabel": "Edit",
                   "buttonColor": "{{InteractionsTable.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
                   "buttonLabel": "Edit",
-                  "onClick": "{{showModal('EditInteractionModal')}}"
+                  "onClick": "{{showModal('EditInteractionModal')}}",
+                  "sticky": ""
                 },
                 "customColumn2": {
                   "allowCellWrapping": false,
@@ -1114,7 +1119,8 @@
                   "customAlias": "",
                   "buttonLabel": "Delete",
                   "onClick": "{{showModal('ConfirmDeleteInteraction')}}",
-                  "buttonVariant": "SECONDARY"
+                  "buttonVariant": "SECONDARY",
+                  "sticky": ""
                 },
                 "id": {
                   "allowCellWrapping": false,
@@ -1142,7 +1148,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{InteractionsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "sticky": ""
                 },
                 "person_id": {
                   "allowCellWrapping": false,
@@ -1170,10 +1177,12 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{InteractionsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"person_id\"]))}}",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "sticky": ""
                 }
               },
               "key": "e29d88ktq6",
+              "canFreezeColumn": false,
               "isDeprecated": false,
               "rightColumn": 64,
               "textSize": "0.875rem",
@@ -1220,7 +1229,7 @@
                   "key": "onClick"
                 }
               ],
-              "leftColumn": 38,
+              "leftColumn": 48,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -1233,7 +1242,7 @@
               "isDisabled": false,
               "key": "ioelyzew8f",
               "isDeprecated": false,
-              "rightColumn": 54,
+              "rightColumn": 64,
               "isDefaultClickDisabled": true,
               "widgetId": "1ezztomed7",
               "isVisible": true,
@@ -1285,7 +1294,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 550,
+                  "bottomRow": 540,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -1492,7 +1501,7 @@
                           "widgetName": "Canvas4Copy",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 410,
+                          "bottomRow": 420,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
