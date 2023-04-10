@@ -1,0 +1,3 @@
+UPDATE contacts
+SET name = '{{EditContactModalName.text.replaceAll("'", "\\'")}}', frequency = {{EditContactModalFrequency.text}}
+WHERE id = {{ContactsTable.triggeredRow.id}};

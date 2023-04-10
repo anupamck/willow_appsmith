@@ -1,0 +1,2 @@
+DELETE FROM interactions
+	WHERE id = {{InteractionsTable.triggeredRow.id}}

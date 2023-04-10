@@ -1,0 +1,2 @@
+SELECT name FROM contacts
+WHERE id = {{appsmith.URL.queryParams.rowId}};
