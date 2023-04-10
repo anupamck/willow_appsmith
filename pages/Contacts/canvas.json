@@ -13,13 +13,13 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1290,
+          "bottomRow": 690,
           "containerStyle": "none",
           "snapRows": 125,
           "parentRowSpace": 1,
           "type": "CANVAS_WIDGET",
           "canExtend": true,
-          "version": 76,
+          "version": 77,
           "minHeight": 1292,
           "dynamicTriggerPathList": [],
           "parentColumnSpace": 1,
@@ -125,6 +125,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "columnUpdatedAt": 1680186742473,
               "primaryColumnId": "id",
               "defaultSelectedRowIndices": [
                 0
@@ -208,7 +209,8 @@
                   "computedValue": "",
                   "validation": {},
                   "cellBackground": "transparent",
-                  "displayText": "{{ContactsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}"
+                  "displayText": "{{ContactsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                  "sticky": ""
                 },
                 "frequency": {
                   "allowCellWrapping": false,
@@ -236,7 +238,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{ContactsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"frequency\"]))}}",
                   "validation": {},
-                  "cellBackground": "transparent"
+                  "cellBackground": "transparent",
+                  "sticky": ""
                 },
                 "customColumn1": {
                   "allowCellWrapping": false,
@@ -271,7 +274,8 @@
                   "buttonLabel": "{{ContactsTable.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
                   "buttonVariant": "SECONDARY",
                   "onClick": "{{showModal('ConfirmDeleteContact')}}",
-                  "cellBackground": "transparent"
+                  "cellBackground": "transparent",
+                  "sticky": ""
                 },
                 "id": {
                   "allowCellWrapping": false,
@@ -299,7 +303,8 @@
                   "isDiscardVisible": true,
                   "computedValue": "{{ContactsTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
                   "validation": {},
-                  "cellBackground": "transparent"
+                  "cellBackground": "transparent",
+                  "sticky": ""
                 },
                 "customColumn3": {
                   "allowCellWrapping": false,
@@ -333,7 +338,8 @@
                   "customAlias": "",
                   "buttonLabel": "{{ContactsTable.processedTableData.map((currentRow, currentIndex) => ( 'Edit'))}}",
                   "onClick": "{{showModal('EditContactModal')}}",
-                  "cellBackground": "transparent"
+                  "cellBackground": "transparent",
+                  "sticky": ""
                 },
                 "customColumn4": {
                   "allowCellWrapping": false,
@@ -367,10 +373,12 @@
                   "boxShadow": "{{ContactsTable.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
                   "buttonLabel": "{{ContactsTable.processedTableData.map((currentRow, currentIndex) => ( 'Interactions'))}}",
-                  "onClick": "{{navigateTo('Interactions', {\"rowId\": ContactsTable.triggeredRow.id }, 'SAME_WINDOW')}}/"
+                  "onClick": "{{navigateTo('Interactions', {\"rowId\": ContactsTable.triggeredRow.id }, 'SAME_WINDOW')}}/",
+                  "sticky": ""
                 }
               },
               "key": "fte1n8gvby",
+              "canFreezeColumn": false,
               "isDeprecated": false,
               "rightColumn": 42,
               "textSize": "0.875rem",
@@ -871,7 +879,7 @@
                           "widgetName": "Canvas4",
                           "displayName": "Canvas",
                           "topRow": 0,
-                          "bottomRow": 390,
+                          "bottomRow": 280,
                           "parentRowSpace": 1,
                           "type": "CANVAS_WIDGET",
                           "canExtend": false,
