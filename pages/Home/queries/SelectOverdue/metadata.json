@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT c.id, c.name, c.frequency, max(i.date) as last_interaction\nFROM contacts c\nLEFT JOIN interactions i ON i.person_id = c.id\nGROUP BY c.id, c.name, c.frequency\nHAVING (DATEDIFF(NOW(), max(i.date))) >= c.frequency",
+      "body": "SELECT c.id, c.name, c.frequency, max(i.date) as last_interaction\nFROM contacts c\nLEFT JOIN interactions i ON i.person_id = c.id\nGROUP BY c.id, c.name, c.frequency\nHAVING (DATEDIFF(NOW(), max(i.date))) >= c.frequency AND c.frequency > 0\nORDER BY c.frequency ASC;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
