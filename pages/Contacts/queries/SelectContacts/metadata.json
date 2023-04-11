@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "SELECT id, name, frequency FROM contacts",
+      "body": "SELECT id, name, frequency FROM contacts\nORDER by name ASC;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

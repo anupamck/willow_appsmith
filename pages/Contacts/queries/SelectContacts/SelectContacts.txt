@@ -1,1 +1,2 @@
 SELECT id, name, frequency FROM contacts
+ORDER by name ASC;
